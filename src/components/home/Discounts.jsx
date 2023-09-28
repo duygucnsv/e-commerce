@@ -26,7 +26,7 @@ const Discounts = () => {
         >
           <Box p="50px">
             <Text fontWeight="600" color="#E53E3E">
-              HAVLU ÇORAP
+              ÖRME ÇORAP
             </Text>
             <Text fontWeight="600" color="brand.900" mb="20px">
               <Badge colorScheme="orange">30% tasarruf edin</Badge>
@@ -64,7 +64,7 @@ const Discounts = () => {
         >
           <Box p="50px">
             <Text fontWeight="600" color="#E53E3E">
-              ÇORAP
+              HAVLU ÇORAP
             </Text>
             <Text fontWeight="600" color="brand.900" mb="20px">
               <Badge colorScheme="orange">20% tasarruf edin</Badge>
