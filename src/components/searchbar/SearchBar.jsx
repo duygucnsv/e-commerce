@@ -9,13 +9,13 @@ const SearchBar = () => {
         w="100%"
         p="2px"
         border="1px"
-        bg="gray.100"
-        borderColor="gray.200"
+        bg="orange.50"
+        borderColor="orange.200"
         borderRadius="30px"
         position="relative"
       >
         <Input
-          placeholder="Search here"
+          placeholder="Buraya yazınız..."
           className="query"
           name="query"
           fontSize="14px"
@@ -27,11 +27,12 @@ const SearchBar = () => {
         <Button
           type="submit"
           href="/"
-          bgColor="gray.100"
+          bgColor="orange.200"
           p="3"
           border="1px"
           borderRadius="30px"
-          borderColor="gray.100"
+          borderColor="orange.100"
+          _hover={{ bgColor: "orange.300" }}
         >
           <FaSearch />
         </Button>

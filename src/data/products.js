@@ -1,27 +1,15 @@
 import product01 from "../assets/imgs/product01.jpg";
-// import tvBase01_02 from "../assets/imgs/tv-base/product01-02.webp"
-// import tvBase01_03 from "../assets/imgs/tv-base/product01-03.webp"
-// import tvBase02_01 from "../assets/imgs/tv-base/product02-01.webp"
-// import tvBase02_02 from "../assets/imgs/tv-base/product02-02.webp"
-// import tvBase02_03 from "../assets/imgs/tv-base/product02-03.webp"
-// import tvBase02_04 from "../assets/imgs/tv-base/product02-04.webp"
-// import tvBase03_01 from "../assets/imgs/tv-base/product03-01.webp"
-// import tvBase03_02 from "../assets/imgs/tv-base/product03-02.webp"
-// import tvBase03_03 from "../assets/imgs/tv-base/product03-03.webp"
-// import tvBase03_04 from "../assets/imgs/tv-base/product03-04.webp"
-// import tvBase04_01 from "../assets/imgs/tv-base/product04-01.webp"
-// import tvBase04_02 from "../assets/imgs/tv-base/product04-02.webp"
-// import tvBase04_03 from "../assets/imgs/tv-base/product04-03.webp"
-// import tvBase04_04 from "../assets/imgs/tv-base/product04-04.webp"
-
+import product20 from "../assets/imgs/product20.jpg";
+import product15 from "../assets/imgs/product15.jpg";
+import bg from "../assets/imgs/bg.jpg";
 
 export const data = {
   products: [
     {
       id: 1,
-      title: "Havlu Bebek Çorabı",
+      title: "El örgüsü Bebek Çorabı",
       description:
-        "Havlu Bebek Çorabı sizin için en iyisidir. Hepsi size alabileceğiniz en iyiyi sunmak için, harika tasarımcılarımız tarafından yaratıldı.",
+        "El örgüsü Bebek Çorabı sizin için en iyisidir. Hepsi size alabileceğiniz en iyiyi sunmak için, harika tasarımcılarımız tarafından yaratıldı.",
 
       price: 30,
       discountPercentage: 30,
@@ -31,74 +19,47 @@ export const data = {
       thumbnail: product01,
       images: [product01, product01],
     },
-    // {
-    //   id: 2,
-    //   title: "Capitol Complex Stand",
-    //   description:
-    //     "The Capitol Complex stand is the best for you. You can never go wrong with any of our products. All have been created by our amazing designers to bring you the best you can get.",
-    //   details: {
-    //     dimension: "L-530mm x W-510mm x H-700mm, SH-450mm",
-    //     base: "With legs",
-    //     baseMaterial: "Wood, Brass",
-    //     brand: "Mezzo",
-    //     color: "White, Peach, Walnut",
-    //     country: "Portugal",
-    //     feature: "Medium back",
-    //     style: "Mid century",
-    //   },
-    //   price: 200,
-    //   discountPercentage: 20,
-    //   rating: 2.69,
-    //   stock: 14,
-    //   category: "Stands",
-    //   thumbnail: tvBase02_03,
-    //   images: [tvBase02_01, tvBase02_02, tvBase02_04],
-    // },
-    // {
-    //   id: 3,
-    //   title: "Ashby Dining Sofa",
-    //   description:
-    //     "The Ashby dining sofa is the best for you. You can never go wrong with any of our products. All have been created by our amazing designers to bring you the best you can get.",
-    //   details: {
-    //     dimension: "L-530mm x W-510mm x H-700mm, SH-450mm",
-    //     base: "With legs",
-    //     baseMaterial: "Wood, Brass",
-    //     brand: "Verun",
-    //     color: "White, Peach, Walnut",
-    //     country: "Portugal",
-    //     feature: "Medium back",
-    //     style: "Mid century",
-    //   },
-    //   price: 230,
-    //   discountPercentage: 20,
-    //   rating: 5.0,
-    //   stock: 14,
-    //   category: "Sofas",
-    //   thumbnail: tvBase03_01,
-    //   images: [tvBase03_02, tvBase03_03, tvBase03_04],
-    // },
-    // {
-    //   id: 4,
-    //   title: "Serbium one-sit sofa",
-    //   description:
-    //     "The serbium one-sit sofa is the best for you. You can never go wrong with any of our products. All have been created by our amazing designers to bring you the best you can get.",
-    //   details: {
-    //     dimension: "L-530mm x W-510mm x H-700mm, SH-450mm",
-    //     base: "With legs",
-    //     baseMaterial: "Wood, Brass",
-    //     brand: "Mezzo",
-    //     color: "White, Peach, Walnut",
-    //     country: "Portugal",
-    //     feature: "Medium back",
-    //     style: "Mid century",
-    //   },
-    //   price: 300,
-    //   discountPercentage: 10,
-    //   rating: 4.69,
-    //   stock: 24,
-    //   category: "Sofas",
-    //   thumbnail: tvBase04_01,
-    //   images: [tvBase04_02, tvBase04_03, tvBase04_04],
-    // },
+    {
+      id: 2,
+      title: "Yetişkin Çorabı",
+      description:
+        "Yetişkin çorapları, ergenlerden yetişkinlere kadar geniş bir yaş aralığında kullanılan ve ayakları koruyarak konfor sağlayan giyim parçalarıdır. Farklı materyallerden üretilirler, pamuklu, yün, polyester gibi malzemeler tercih edilir. Ayak sağlığına uygun olarak tasarlanan yetişkin çorapları, renk, desen ve kesim çeşitliliği ile moda ve tarzı yansıtmak için kullanılır.",
+
+      price: 60,
+      discountPercentage: 30,
+      rating: 3.69,
+      stock: 200,
+      category: "Çorap",
+      thumbnail: product20,
+      images: [product20, product20],
+    },
+    {
+      id: 3,
+      title: "Bebek Çorabı",
+      description:
+        "Bebek çorapları, bebeklerin hassas ciltleri için özel olarak tasarlanmış, yumuşak ve pamuklu dokusuyla dikkat çeken giyim parçalarıdır. Bebeklerin ayaklarını sıcak tutmak, korumak ve rahat ettirmek için kullanılır. Renkli, sevimli desenlerle ve bebeklerin küçük ayaklarına uygun kesimlerle bebek çorapları, ebeveynlerin tercihleri doğrultusunda seçilir ve bebeklerin giyim tarzını tamamlar.",
+
+      price: 35,
+      discountPercentage: 30,
+      rating: 3.69,
+      stock: 400,
+      category: "Çorap",
+      thumbnail: product15,
+      images: [product15, product15],
+    },
+    {
+      id: 4,
+      title: "Yeniyıl Çorabı",
+      description:
+        "Yeni yıl çorapları, yılın en özel zamanını karşılamak için adımlarınıza mutluluk ve neşe katıyor! Yeni yılın coşkusunu ve heyecanını en iyi şekilde yansıtan bu özel çoraplar, rengarenk tasarımları ve eğlenceli desenleriyle herkesi kendine çekiyor.",
+
+      price: 50,
+      discountPercentage: 30,
+      rating: 3.69,
+      stock: 100,
+      category: "Çorap",
+      thumbnail: bg,
+      images: [bg, bg],
+    },
   ],
 };

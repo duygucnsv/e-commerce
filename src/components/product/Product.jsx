@@ -11,7 +11,7 @@ const Product = ({ product }) => {
     <Box position="relative" shadow="base">
       <Suspense fallback={renderLoader()}>
         <Badge
-          bgColor="brand.900"
+          bgColor="orange"
           color="white"
           position="absolute"
           top="10px"
@@ -30,7 +30,11 @@ const Product = ({ product }) => {
               ₺
               {product.price -
                 (product.discountPercentage / 100) * product.price}
-              <Badge colorScheme="gray" ms="10px" textDecoration="line-through">
+              <Badge
+                colorScheme="orange"
+                ms="10px"
+                textDecoration="line-through"
+              >
                 ₺{product.price}
               </Badge>
             </Text>
