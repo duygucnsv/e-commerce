@@ -1,5 +1,4 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import "./App.css";
 
 import CustomRoutes from "./router/custom-router";
 

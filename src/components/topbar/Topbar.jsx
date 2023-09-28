@@ -3,7 +3,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { useLocation } from "react-router-dom";
 
 // import { useSelector } from "react-redux";
-// import logo from "../../assets/imgs/logo.png";
+import logo from "../../assets/imgs/logo.png";
 
 import { FaUserCircle } from "react-icons/fa";
 import Navbar from "../Navbar/Navbar";
@@ -24,7 +24,7 @@ const Topbar = () => {
         justify="space-between"
         align="center"
         shadow="base"
-        px={[null, "0px", "5%", "10%"]}
+        px={[null, "0px", "5%", "5%"]}
         py="2.5"
       >
         {/* Brand logo and name */}
@@ -35,9 +35,8 @@ const Topbar = () => {
           color="brand.900"
           ps={["20px", "20px", 0]}
         >
-          <Image  width="27px"/> 
           <Link href="/" fontWeight={600} color="black" ms="2" title="logo">
-            Canstekstil
+            <Image src={logo} width="120px" alt="logo" />
           </Link>
         </Flex>
 
