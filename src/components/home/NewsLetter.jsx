@@ -26,11 +26,11 @@ const NewsLetter = () => {
           w={["100%", "100%", "350px"]}
         />
         <Link
-          href="/"
+          // to="/"
           bgColor="brand.900"
           p="10px 25px"
           border="1px"
-          borderColor="brand.900"
+          borderColor="orange.900"
           color="white"
         >
           Abone ol

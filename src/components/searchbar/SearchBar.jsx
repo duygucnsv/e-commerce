@@ -15,7 +15,7 @@ const SearchBar = () => {
         position="relative"
       >
         <Input
-          placeholder="Buraya yazınız..."
+          placeholder="Buradan arayınız..."
           className="query"
           name="query"
           fontSize="14px"

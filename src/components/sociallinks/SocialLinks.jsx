@@ -15,11 +15,11 @@ const SocialLinks = () => {
           key={i}
           href={link.to}
           p="2"
-          bgColor="gray.600"
+          bgColor="orange.300"
           color="white"
           me="2"
           borderRadius="2px"
-          _hover={{ bgColor: "brand.900" }}
+          _hover={{ bgColor: "orange.600" }}
         >
           {link.icon}
         </Link>

@@ -19,7 +19,7 @@ const UnderTitle = () => {
             // href="/Shop"
             fontSize="14px"
             p="10px 20px"
-            bgColor="grand.600"
+            bgColor="orange.600"
             color="orange"
             _hover={{ bgColor: "orange.500" }}
           >

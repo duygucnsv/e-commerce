@@ -17,7 +17,7 @@ const Product = ({ product }) => {
           top="10px"
           right="10px"
         >
-          {product.discountPercentage}%
+          %{product.discountPercentage}
         </Badge>
         <Link
         // to={{ pathname: `/SingleProduct?id=${product.id}` }}
