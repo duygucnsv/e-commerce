@@ -11,7 +11,7 @@ import {
   addProductToWishlist,
   removeProductFromWishlist,
 } from "../../redux/slice/wishlistSlice";
-import ChangeQuantity from "./changeQuantity";
+import ChangeQuantity from "./ChangeQuantity";
 
 const CartWishlist = ({ product }) => {
   const [cartIds, setCartIds] = useState();
@@ -33,7 +33,7 @@ const CartWishlist = ({ product }) => {
             flex="1"
             me="5px"
             fontSize="14px"
-            bgColor="gray.100"
+            bgColor="orange.100"
             borderRadius="0"
             onClick={() => dispatch(removeProductFromCart(product.id))}
           >
@@ -45,7 +45,7 @@ const CartWishlist = ({ product }) => {
         <Button
           flex="1"
           fontSize="14px"
-          bgColor="gray.100"
+          bgColor="orange.100"
           borderRadius="0"
           onClick={() => dispatch(addProductToCart(product.id))}
         >
@@ -55,7 +55,7 @@ const CartWishlist = ({ product }) => {
       {wishlistIds && wishlistIds.indexOf(product.id) !== -1 ? (
         <Button
           fontSize="14px"
-          bgColor="gray.100"
+          bgColor="orange.100"
           color="red"
           borderRadius="0"
           ms="1"
@@ -66,12 +66,12 @@ const CartWishlist = ({ product }) => {
       ) : (
         <Button
           fontSize="14px"
-          bgColor="gray.100"
+          bgColor="orange.100"
           borderRadius="0"
           ms="1"
           onClick={() => dispatch(addProductToWishlist(product.id))}
         >
-          <FiHeart />
+          <FiHeart  />
         </Button>
       )}
     </Flex>

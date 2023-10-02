@@ -1,8 +1,9 @@
 import { Suspense } from "react";
 import { Badge, Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-// import CartWishlist from "../shopActions/cartWishlist";
+
 import StarRating from "../starRating/StarRating";
+import CartWishlist from "../shopActions/CartWishlist";
 
 const renderLoader = () => <p>Loading</p>;
 
@@ -19,9 +20,7 @@ const Product = ({ product }) => {
         >
           %{product.discountPercentage}
         </Badge>
-        <Link
-        // to={{ pathname: `/SingleProduct?id=${product.id}` }}
-        >
+        <Link to="/SingleProduct?id=1">
           <Image w="100%" src={product.thumbnail} alt="product" p="4" />
         </Link>
         <Box p="4" fontSize="14px">
@@ -43,7 +42,7 @@ const Product = ({ product }) => {
           <Text my="20px" p="3px 6px">
             {product.title}
           </Text>
-          {/* <CartWishlist product={product} /> */}
+          <CartWishlist product={product} />
         </Box>
       </Suspense>
     </Box>
