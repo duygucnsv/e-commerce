@@ -71,7 +71,7 @@ const CartWishlist = ({ product }) => {
           ms="1"
           onClick={() => dispatch(addProductToWishlist(product.id))}
         >
-          <FiHeart  />
+          <FiHeart />
         </Button>
       )}
     </Flex>

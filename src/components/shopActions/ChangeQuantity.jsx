@@ -14,7 +14,7 @@ const ChangeQuantity = ({ product }) => {
     <Flex justify="flex-end" border="1px solid #FEEBC8" p="3px">
       <Button
         size="sm"
-        borderColor="orange.100"
+        bgColor="orange.100"
         fontSize="10px"
         borderRadius="0"
         p="1"
@@ -44,7 +44,7 @@ const ChangeQuantity = ({ product }) => {
 
       <Button
         size="sm"
-        borderColor="orange.100"
+        bgColor="orange.100"
         fontSize="10px"
         borderRadius="0"
         p="1"

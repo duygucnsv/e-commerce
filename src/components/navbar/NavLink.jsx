@@ -13,7 +13,7 @@ const NavLink = ({ navlocation, children }) => {
         alignItems="center"
         w="100%"
         color={location === `/${navlocation}` ? "brand.900" : ""}
-        _hover={{ color: "brand.900" }}
+        _hover={{ color: "orange.600" }}
       >
         <Text me="3" opacity="0.6">
           {children}

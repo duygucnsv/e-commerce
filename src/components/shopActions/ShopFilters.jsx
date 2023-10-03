@@ -18,8 +18,8 @@ import { useState } from "react";
 
 const ShopFilters = ({ handleFilters, clearFilters }) => {
   const [filters, setFilters] = useState({
-    categories: ["Sofas", "Stands"],
-    brands: ["Mezzo", "Verun"],
+    categories: ["Havlu", "Örme"],
+    brands: ["Cans", "Cans"],
     price: [0, 500],
     discount: 0,
   });
@@ -61,23 +61,33 @@ const ShopFilters = ({ handleFilters, clearFilters }) => {
 
   return (
     <Box w={["100%", "100%", "320px"]} p="2" bgColor={"orange.100"}>
-      <Text p="20px" border="1px solid orange.100">
-        Filter Products
+      <Text
+        p="20px"
+        border="1px solid orange.100"
+        fontWeight="600"
+        color="brand.900"
+      >
+        Filtrele
       </Text>
       <Accordion p="20px" bgColor="white">
         <AccordionItem>
-          <AccordionButton my="10px" fontWeight="600" color="orange.900">
-            CATEGORIES
+          <AccordionButton
+            my="10px"
+            fontWeight="600"
+            color="brand.900"
+            _hover={{ color: "orange.600" }}
+          >
+            Kategoriler
           </AccordionButton>
           <AccordionPanel>
             <Box>
-              {["Sofas", "Stands"].map((item, index) => {
+              {["Havlu", "Örme"].map((item, index) => {
                 return (
                   <Checkbox
                     key={index}
                     p="2"
                     value={item}
-                    colorScheme="green"
+                    colorScheme="orange"
                     onChange={(e) => handleCategories(e)}
                     defaultChecked
                   >
@@ -91,22 +101,26 @@ const ShopFilters = ({ handleFilters, clearFilters }) => {
         </AccordionItem>
 
         <AccordionItem>
-          <AccordionButton my="10px" fontWeight="600" color="brand.900">
-            BRANDS
+          <AccordionButton
+            my="10px"
+            fontWeight="600"
+            color="brand.900"
+            _hover={{ color: "orange.600" }}
+          >
+            Markalar
           </AccordionButton>
           <AccordionPanel>
             <Box>
-              {["Mezzo", "Verun"].map((item, index) => {
+              {["Cans", "Cans"].map((item, index) => {
                 return (
                   <Checkbox
                     key={index}
                     p="2"
                     value={item}
-                    colorScheme="green"
+                    colorScheme="orange"
                     onChange={(e) => handleBrands(e)}
                     defaultChecked
                   >
-                    {" "}
                     {item}
                   </Checkbox>
                 );
@@ -116,14 +130,19 @@ const ShopFilters = ({ handleFilters, clearFilters }) => {
         </AccordionItem>
 
         <AccordionItem>
-          <AccordionButton my="10px" fontWeight="600" color="brand.900">
-            PRICE
+          <AccordionButton
+            my="10px"
+            fontWeight="600"
+            color="brand.900"
+            _hover={{ color: "orange.600" }}
+          >
+            Fiyat
           </AccordionButton>
           <AccordionPanel>
             <RangeSlider
               max={500}
               aria-label={"price"}
-              colorScheme="green"
+              colorScheme="orange"
               defaultValue={[0, 500]}
               onChangeEnd={(val) => setFilters({ ...filters, price: val })}
             >
@@ -139,42 +158,28 @@ const ShopFilters = ({ handleFilters, clearFilters }) => {
             </Flex>
           </AccordionPanel>
         </AccordionItem>
-
-        <AccordionItem>
-          <AccordionButton my="10px" fontWeight="600" color="brand.900">
-            DISCOUNT PERCENTAGE
-          </AccordionButton>
-          <AccordionPanel>
-            <Select
-              onChange={(e) =>
-                setFilters({ ...filters, discount: e.target.value })
-              }
-            >
-              {[10, 20, 30, 40, 50].map((item, index) => {
-                return (
-                  <option key={index} value={item}>
-                    {item}% or more
-                  </option>
-                );
-              })}
-            </Select>
-          </AccordionPanel>
-        </AccordionItem>
       </Accordion>
 
       <Flex p="20px">
         <Button
-          bgColor="brand.900"
+          bgColor="orange.500"
+          _hover={{ bgColor: "orange.600" }}
           color="white"
           flex="1"
           me="2"
           borderRadius="0"
           onClick={() => submitFilters()}
         >
-          Apply filters
+          Uygula
         </Button>
-        <Button bgColor="gray.100" onClick={() => clearFilters()}>
-          Clear
+        <Button
+          borderRadius="0"
+          bgColor="orange.500"
+          _hover={{ bgColor: "orange.600" }}
+          color="white"
+          onClick={() => clearFilters()}
+        >
+          Temizle
         </Button>
       </Flex>
     </Box>

@@ -3,9 +3,9 @@ import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bg1 from "../../assets/imgs/bg1.webp";
-import bg2 from "../../assets/imgs/bg2.webp";
-import bg3 from "../../assets/imgs/bg3.webp";
+import bg4 from "../../assets/imgs/bg4.jpg";
+import product05 from "../../assets/imgs/product05.jpg";
+import bg5 from "../../assets/imgs/bg5.jpg";
 import { useSelector } from "react-redux";
 
 import { shopSliderSettings } from "../../utils/sliderSettings";
@@ -36,7 +36,7 @@ const Shop = () => {
           <Box
             w="100%"
             h="250px"
-            backgroundImage={`url(${bg1})`}
+            backgroundImage={`url(${product05})`}
             backgroundSize="cover"
             bgPosition="50%, 75%"
           >
@@ -47,20 +47,15 @@ const Shop = () => {
               fontSize="0.8rem"
               w={["50%"]}
             >
-              <Text
-                mt="30px"
-                fontSize="20px"
-                fontWeight="700"
-                color="brand.900"
-              >
-                Get as low as 60% discount on our chairs
+              <Text mt="30px" fontSize="20px" fontWeight="700" color="gray.300">
+                Çoraplarımızda %60'a varan indirimlerden yararlanın
               </Text>
             </Box>
           </Box>
           <Box
             w="100%"
             h="250px"
-            backgroundImage={`url(${bg2})`}
+            backgroundImage={`url(${bg5})`}
             backgroundSize="cover"
             bgPosition="50%, 75%"
           >
@@ -71,20 +66,15 @@ const Shop = () => {
               fontSize="0.8rem"
               w={["50%"]}
             >
-              <Text
-                mt="30px"
-                fontSize="20px"
-                fontWeight="700"
-                color="brand.900"
-              >
-                Free delivery when you purchase our Tv stands
+              <Text mt="30px" fontSize="20px" fontWeight="700" color="gray.300">
+                Ücretsiz teslimat seçeneğimizden yararlanın
               </Text>
             </Box>
           </Box>
           <Box
             w="100%"
             h="250px"
-            backgroundImage={`url(${bg3})`}
+            backgroundImage={`url(${bg4})`}
             backgroundSize="cover"
             bgPosition="50%, 75%"
           >
@@ -95,13 +85,8 @@ const Shop = () => {
               fontSize="0.8rem"
               w={["50%"]}
             >
-              <Text
-                mt="30px"
-                fontSize="20px"
-                fontWeight="700"
-                color="brand.900"
-              >
-                Flash sales ongoing for our sofa collections
+              <Text mt="30px" fontSize="20px" fontWeight="700" color="gray.300">
+                Yaz koleksiyonlarımızda flaş indirimler devam ediyor
               </Text>
             </Box>
           </Box>
