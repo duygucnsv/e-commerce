@@ -1,7 +1,7 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import product03 from "../../assets/imgs/product03.jpg";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const UnderTitle = () => {
   return (
@@ -15,16 +15,18 @@ const UnderTitle = () => {
             Bir çorabın amacı sizi rahat ettirirken aynı zamanda ayağınızı
             güzelleştirmek 😊
           </Text>
-          <Link
-            // href="/Shop"
+          <Button
+            as={RouterLink}
+            to="/Mağaza"
             fontSize="14px"
             p="10px 20px"
-            bgColor="orange.600"
-            color="orange"
-            _hover={{ bgColor: "orange.500" }}
+            bgColor="orange.200"
+            color="brand.900"
+            borderRadius="0"
+            _hover={{ bgColor: "orange.300" }}
           >
             Ürünlere git
-          </Link>
+          </Button>
         </Box>
         <Image
           src={product03}

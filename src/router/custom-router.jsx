@@ -4,7 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages/home/home-page";
 import Topbar from "../components/topbar/Topbar";
 import Footer from "../components/footer/Footer";
-import ShopItem from "../pages/shopItem";
+import Shop from "../pages/shop";
+import Cart from "../pages/cart";
+import WishList from "../pages/wishList";
 
 const CustomRoutes = () => {
   return (
@@ -14,7 +16,9 @@ const CustomRoutes = () => {
         <Route path="/Anasayfa">
           <Route index element={<HomePage />} />
         </Route>
-        <Route path="/Mağaza" exact element={<ShopItem />} />
+        <Route path="/Mağaza" exact element={<Shop />} />
+        <Route path="/Sepet" exact element={<Cart />} />
+        <Route path="/Favoriler" exact element={<WishList />} />
       </Routes>
       <Footer />
     </BrowserRouter>

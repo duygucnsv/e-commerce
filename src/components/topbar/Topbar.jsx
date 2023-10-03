@@ -2,7 +2,7 @@ import { Badge, Box, Flex, Image, Link } from "@chakra-ui/react";
 import { FiShoppingCart } from "react-icons/fi";
 import { useLocation } from "react-router-dom";
 
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import logo from "../../assets/imgs/logo.png";
 
 import { FaUserCircle } from "react-icons/fa";
@@ -12,7 +12,7 @@ import Button from "../button/Button";
 
 const Topbar = () => {
   const location = useLocation().pathname;
-  //   const cart = useSelector((state) => state.data.cart);
+  const cart = useSelector((state) => state.data.cart);
   const user = [];
   const active = {
     color: "brand.900",
@@ -35,7 +35,13 @@ const Topbar = () => {
           color="brand.900"
           ps={["20px", "20px", 0]}
         >
-          <Link href="/" fontWeight={600} color="black" ms="2" title="logo">
+          <Link
+            href="/Anasayfa"
+            fontWeight={600}
+            color="black"
+            ms="2"
+            title="logo"
+          >
             <Image src={logo} width="120px" alt="logo" />
           </Link>
         </Flex>
@@ -46,26 +52,26 @@ const Topbar = () => {
 
         <Flex align="center" justify="flex-end">
           <Link
-            // href="/Cart"
+            href="/Sepet"
             p="2"
             fontSize="18px"
             display={["none", "none", "flex"]}
             me={6}
             position="relative"
-            // style={location === "/Cart" ? active : { color: "" }}
+            style={location === "/Sepet" ? active : { color: "" }}
             _hover={{ color: "brand.900" }}
             title="cart"
           >
             <FiShoppingCart />
-            {/* <Badge
+            <Badge
               color="white"
-              bgColor="brand.900"
+              bgColor="orange.200"
               position="absolute"
               top="0"
               right="-5px"
             >
               {cart.length}
-            </Badge> */}
+            </Badge>
           </Link>
 
           {!user ? (

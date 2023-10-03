@@ -1,7 +1,7 @@
-import { Box, Flex, Input } from "@chakra-ui/react";
+import { Box, Button, Flex, Input } from "@chakra-ui/react";
 import React from "react";
 import Heading from "../heading/Heading";
-import { Link } from "react-router-dom";
+import { Link, Link as RouterLink } from "react-router-dom";
 
 const NewsLetter = () => {
   return (
@@ -25,16 +25,18 @@ const NewsLetter = () => {
           border="none"
           w={["100%", "100%", "350px"]}
         />
-        <Link
-          // to="/"
-          bgColor="brand.900"
-          p="10px 25px"
-          border="1px"
-          borderColor="orange.900"
-          color="white"
+        <Button
+          as={RouterLink}
+          to="/Mağaza"
+          fontSize="14px"
+          p="10px 20px"
+          bgColor="orange.200"
+          color="brand.900"
+          borderRadius="0"
+          _hover={{ bgColor: "orange.300" }}
         >
           Abone ol
-        </Link>
+        </Button>
       </Flex>
     </Box>
   );

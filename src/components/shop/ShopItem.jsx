@@ -13,7 +13,7 @@ import { filterProducts } from "../../utils/filterProducts";
 import ShopFilters from "../shopActions/ShopFilters";
 import Product from "../product/Product";
 
-const Shop = () => {
+const ShopItem = () => {
   const [products, setProducts] = useState([]);
   const defaultProducts = useSelector((state) => state.data.products);
 
@@ -120,4 +120,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default ShopItem;

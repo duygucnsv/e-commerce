@@ -19,7 +19,7 @@ const SocialLinks = () => {
           color="white"
           me="2"
           borderRadius="2px"
-          _hover={{ bgColor: "orange.600" }}
+          _hover={{ bgColor: "orange.400" }}
         >
           {link.icon}
         </Link>

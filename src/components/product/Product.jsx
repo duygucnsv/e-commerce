@@ -26,15 +26,15 @@ const Product = ({ product }) => {
         <Box p="4" fontSize="14px">
           <Flex px="5px" align="center" justify="space-between">
             <Text fontSize="16px" fontWeight="600">
-              ₺
               {product.price -
                 (product.discountPercentage / 100) * product.price}
+              ₺
               <Badge
                 colorScheme="orange"
                 ms="10px"
                 textDecoration="line-through"
               >
-                ₺{product.price}
+                {product.price}₺
               </Badge>
             </Text>
             <StarRating rating={product.rating} />

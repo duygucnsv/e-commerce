@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { useRef } from "react";
 import { HiMenu } from "react-icons/hi";
-import { FiHome, FiShoppingCart } from "react-icons/fi";
+import { FiHeart, FiHome, FiShoppingCart } from "react-icons/fi";
 import SearchBar from "../searchbar/SearchBar";
 import SocialLinks from "../sociallinks/SocialLinks";
 
@@ -63,7 +63,6 @@ const Navbar = () => {
               <Link href={user ? "/dashboard" : "/login"} fontSize="14px">
                 {user ? "Welcome" : "Login"}
               </Link>
-              
             </Box>
           </DrawerHeader>
           <DrawerBody fontSize="14px">
@@ -81,13 +80,13 @@ const Navbar = () => {
                 </NavLink>
               </Box>
               <Box fontWeight="600" my="2">
-                <NavLink navlocation={"Ürünler"}>
-                  <FiHome />
+                <NavLink navlocation={"Sepet"}>
+                  <FiShoppingCart />
                 </NavLink>
               </Box>
               <Box fontWeight="600" my="2">
-                <NavLink navlocation={"Sepet"}>
-                  <FiShoppingCart />
+                <NavLink navlocation={"Favoriler"}>
+                  <FiHeart />
                 </NavLink>
               </Box>
               {!user ? (
@@ -102,11 +101,11 @@ const Navbar = () => {
                     py="2"
                     alignItems="center"
                     w="100%"
-                    _hover={{ color: "brand.900" }}
+                    _hover={{ color: "orange.600" }}
                   >
                     <FaSignOutAlt />
-                    <Text me="3" ml={"10px"}>
-                      Logout
+                    <Text cursor={"pointer"} me="3" ml={"10px"}>
+                      Çıkış
                     </Text>
                   </Box>
                 </Box>
