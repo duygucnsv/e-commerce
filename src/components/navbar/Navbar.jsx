@@ -61,7 +61,7 @@ const Navbar = () => {
             <Avatar size="sm" me="2" />
             <Box>
               <Link href={user ? "/dashboard" : "/login"} fontSize="14px">
-                {user ? "Welcome" : "Login"}
+                {user ? "Hoşgeldiniz" : "Giriş yapın"}
               </Link>
             </Box>
           </DrawerHeader>

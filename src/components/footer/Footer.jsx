@@ -1,5 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
 import SocialLinks from "../sociallinks/SocialLinks";
+import NavLink from "../Navbar/NavLink";
 
 const Footer = () => {
   return (
@@ -12,6 +13,16 @@ const Footer = () => {
         fontSize="14px"
         bgColor="orange.100"
       >
+        <Box w={["100%", "50%", "30%", "23%"]} my="3">
+          <Text fontWeight="700" p="3">
+            SAYFALAR
+          </Text>
+
+          <NavLink navlocation={"Anasayfa"} />
+          <NavLink navlocation={"Mağaza"} />
+          <NavLink navlocation={"Sepet"} />
+          <NavLink navlocation={"Favoriler"} />
+        </Box>
         <Box w={["100%", "50%", "30%", "23%"]} my="3" px="3">
           <SocialLinks />
           <Text>İstanbul,Türkiye</Text>

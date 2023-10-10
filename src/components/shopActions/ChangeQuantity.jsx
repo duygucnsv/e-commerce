@@ -25,9 +25,11 @@ const ChangeQuantity = ({ product }) => {
     <Flex justify="flex-end" border="1px solid #FEEBC8" p="3px">
       <Button
         size="sm"
-        bgColor="orange.100"
         fontSize="10px"
+        bgColor="orange.200"
+        color="brand.900"
         borderRadius="0"
+        _hover={{ bgColor: "orange.300" }}
         p="1"
         onClick={handleIncreaseClick}
       >
@@ -41,6 +43,7 @@ const ChangeQuantity = ({ product }) => {
         fontSize="12px"
         borderRadius="0"
         bgColor="whiteAlpha.500"
+        _hover={{ bgColor: "orange.300" }}
         w="40px"
       >
         {cartItem ? cartItem.quantity || 1 : 1}
@@ -48,9 +51,11 @@ const ChangeQuantity = ({ product }) => {
 
       <Button
         size="sm"
-        bgColor="orange.100"
         fontSize="10px"
+        bgColor="orange.200"
+        color="brand.900"
         borderRadius="0"
+        _hover={{ bgColor: "orange.300" }}
         p="1"
         onClick={handleDecreaseClick}
       >

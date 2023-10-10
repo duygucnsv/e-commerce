@@ -33,8 +33,10 @@ const CartWishlist = ({ product }) => {
             flex="1"
             me="5px"
             fontSize="14px"
-            bgColor="orange.100"
+            bgColor="orange.200"
+            color="brand.900"
             borderRadius="0"
+            _hover={{ bgColor: "orange.300" }}
             onClick={() => dispatch(removeProductFromCart(product.id))}
           >
             <FaMinus />
@@ -45,8 +47,10 @@ const CartWishlist = ({ product }) => {
         <Button
           flex="1"
           fontSize="14px"
-          bgColor="orange.100"
+          bgColor="orange.200"
+          color="brand.900"
           borderRadius="0"
+          _hover={{ bgColor: "orange.300" }}
           onClick={() => dispatch(addProductToCart(product.id))}
         >
           <FiShoppingCart />
@@ -56,7 +60,7 @@ const CartWishlist = ({ product }) => {
         <Button
           fontSize="14px"
           bgColor="orange.100"
-          color="red"
+          color="orange"
           borderRadius="0"
           ms="1"
           onClick={() => dispatch(removeProductFromWishlist(product.id))}
@@ -66,8 +70,10 @@ const CartWishlist = ({ product }) => {
       ) : (
         <Button
           fontSize="14px"
-          bgColor="orange.100"
+          bgColor="orange.200"
+          color="brand.900"
           borderRadius="0"
+          _hover={{ bgColor: "orange.300" }}
           ms="1"
           onClick={() => dispatch(addProductToWishlist(product.id))}
         >

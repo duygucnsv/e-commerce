@@ -7,6 +7,7 @@ import Footer from "../components/footer/Footer";
 import Shop from "../pages/shop";
 import Cart from "../pages/cart";
 import WishList from "../pages/wishList";
+import Checkout from "../pages/checkout";
 
 const CustomRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const CustomRoutes = () => {
         <Route path="/Mağaza" exact element={<Shop />} />
         <Route path="/Sepet" exact element={<Cart />} />
         <Route path="/Favoriler" exact element={<WishList />} />
+        <Route path="/Ödemeler" exact element={<Checkout />} />
       </Routes>
       <Footer />
     </BrowserRouter>

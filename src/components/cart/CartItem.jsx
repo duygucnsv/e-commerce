@@ -14,7 +14,7 @@ import { FaHandPointDown } from "react-icons/fa";
 import { FiTrash } from "react-icons/fi";
 import { useSelector, useDispatch } from "react-redux";
 import { removeProductFromCart } from "../../redux/slice/cartSlice";
-import {Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import ChangeQuantity from "../shopActions/ChangeQuantity";
 import Heading from "../heading/Heading";
 
@@ -39,8 +39,6 @@ const Cart = () => {
     // Şu an için basitçe %50 indirim uyguluyoruz.
     setSubTotal(subTotal - subTotal * 0.5); // %50 indirim
   };
-
-
 
   useEffect(() => {
     let subTotalSum = 0;
@@ -102,7 +100,13 @@ const Cart = () => {
                       <Box p="30px 10px" flex="1">
                         <Text fontWeight="bold">
                           {product.title}
-                          <Badge colorScheme="orange" p="2" float="right">
+                          <Badge
+                            cursor="pointer"
+                            colorScheme="orange"
+                            p="2"
+                            float="right"
+                            _hover={{ bgColor: "orange.300" }}
+                          >
                             <FiTrash
                               onClick={() =>
                                 dispatch(removeProductFromCart(product.id))
@@ -161,9 +165,9 @@ const Cart = () => {
                   bgColor="orange.200"
                   fontSize="14px"
                   p="12px 25px"
-                  border="1px"
-                  borderColor="gray.100"
+                  color="brand.900"
                   borderRadius="0"
+                  _hover={{ bgColor: "orange.300" }}
                 >
                   İndirim Kodu
                 </Button>
@@ -195,13 +199,14 @@ const Cart = () => {
 
               <Flex m="20px 0" bgColor="white" p="10px">
                 <Button
-                  //   href="/checkout"
+                  href="/Ödemeler"
                   p="12px"
                   w="100%"
                   textAlign="center"
-                  borderRadius="0"
-                  color="brand.900"
                   bgColor="orange.200"
+                  color="brand.900"
+                  borderRadius="0"
+                  _hover={{ bgColor: "orange.300" }}
                 >
                   Şimdi ödeme yap
                 </Button>
